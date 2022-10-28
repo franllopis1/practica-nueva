@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('practica') {
       steps {
-        echo hola
+        practica-nueva("APP_JAVA-INT:","0.0.5")
       }
     }
   }
