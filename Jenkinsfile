@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('prueba') {
       steps {
-        practica-nueva("APP_JAVA-INT:","0.0.5")
+        practica-nueva("hola","yo")
       }
     }
   }
