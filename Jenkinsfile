@@ -4,9 +4,9 @@
 pipeline {
   agent any
   stages {
-    stage('prueba') {
+    stage('practica') {
       steps {
-        practica-nueva("hola","yo")
+        practica-nueva("APP_JAVA-INT:","0.0.5")
       }
     }
   }
