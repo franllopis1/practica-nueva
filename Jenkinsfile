@@ -5,7 +5,9 @@ pipeline {
   stages {
     stage('practica') {
       steps {
-        readYaml
+        script{
+          readYaml
+        }
       }
     }
   }
