@@ -5,8 +5,7 @@ pipeline {
   stages {
     stage('practica') {
       steps {
-        archivo = new File("release.yaml")
-        archivo.eachLine( { println it })
+        readYaml
       }
     }
   }
