@@ -5,7 +5,7 @@ pipeline {
   stages {
     stage('practica') {
       steps {
-        practicanueva(new File ("release.yaml").eachLine listarFichero)
+        practicanueva(new File ("release.yaml").eachLine listar)
       }
     }
   }
