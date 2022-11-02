@@ -5,7 +5,10 @@ pipeline {
   stages {
     stage('practica') {
       steps {
-        readYaml "release.yaml"
+        script{
+          datas = readYaml (file: "release.yaml")
+        }
+          echo datas.ear_file.deploy.toString()
         }
       }
     }
