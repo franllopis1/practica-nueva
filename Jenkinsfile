@@ -6,7 +6,7 @@ pipeline {
     stage('practica') {
       steps {
         script{
-          readYaml
+          sh "cut -d " " -f1,2 release.yaml | grep INT"
         }
       }
     }
