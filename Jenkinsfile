@@ -5,7 +5,7 @@ pipeline {
   stages {
     stage('practica') {
       steps {
-        practicanueva("fran","miercoles")
+        readYaml
         }
       }
     }
