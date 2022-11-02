@@ -1,10 +1,12 @@
+#!groovy
+@Library('Libreria') _
 pipeline {
   agent any
   stages {
     stage('practica') {
       steps {
         script{
-          cod = cut -d { } -f1 {release.yaml}
+          cod = cut -d { } -f1 (release.yaml)
         }
         echo cod
         }
