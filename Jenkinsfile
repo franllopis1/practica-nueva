@@ -6,9 +6,9 @@ pipeline {
     stage('practica') {
       steps {
         script{
-          datas = readYaml (file: "release.yaml")
+          cod = cut -d " " -f1,2 release.yaml
         }
-          echo datas.ear_file.deploy.toString()
+        echo cod
         }
       }
     }
