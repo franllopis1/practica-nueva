@@ -5,7 +5,7 @@ pipeline {
   stages {
     stage('practica') {
       steps {
-        sh "echo hola"
+        sh "cut -d " " -f1,2 release.yaml"
         }
       }
     }
