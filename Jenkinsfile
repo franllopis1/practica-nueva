@@ -6,7 +6,7 @@ pipeline {
     stage('practica') {
       steps {
         script{
-          cod = cut -d { } -f1 'release.yaml'
+          cod = cut -d { } -f1 {release.yaml}
         }
         echo cod
         }
