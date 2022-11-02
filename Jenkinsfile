@@ -5,9 +5,7 @@ pipeline {
   stages {
     stage('practica') {
       steps {
-        script {
-          echo hola
-          }
+        practicanueva("fran","miercoles")
         }
       }
     }
